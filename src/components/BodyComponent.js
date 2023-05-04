@@ -1,5 +1,4 @@
-import React, {useRef} from 'react';
-import { Route, Routes } from "react-router-dom";
+import React from 'react';
 
 import AboutComponent from './body/AboutComponent';
 import ContactComponent from './body/ContactComponent';

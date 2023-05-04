@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+//TODO: Align brand and collapsible button with home
 function NavbarComponent (){
 	return (
 		<Navbar bg="light" expand="lg">

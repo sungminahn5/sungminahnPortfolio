@@ -1,15 +1,15 @@
 import React from 'react';
 
-import AboutComponent from './body/AboutComponent';
+import AboutContainer from './body/aboutComponents/AboutContainer';
 import ContactComponent from './body/ContactComponent';
-import HomeComponent from './body/HomeComponent';
+import HomeContainer from './body/homeComponents/HomeContainer';
 import ProjectsComponent from './body/ProjectsComponent';
 
 export default function BodyComponent(){
 	return (
 		<div class="body-container">
-			<HomeComponent/>
-			<AboutComponent/>
+			<HomeContainer/>
+			<AboutContainer/>
 			<ProjectsComponent/>
 			<ContactComponent/>
 		</div>

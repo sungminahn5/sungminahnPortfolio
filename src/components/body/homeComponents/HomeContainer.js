@@ -1,10 +1,10 @@
 import React from 'react';
 
-import BodyContainer from './BodyContainer';
+import BodyContainer from '../BodyContainer';
 import Stack from 'react-bootstrap/Stack';
 import HomeSkillStack from './HomeSkillStack';
 
-export default function HomeComponent(){
+export default function HomeContainer(){
 	return (
 		<BodyContainer>
 			<div className="home-container">

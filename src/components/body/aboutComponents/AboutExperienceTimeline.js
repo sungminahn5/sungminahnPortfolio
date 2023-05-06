@@ -3,9 +3,10 @@ import React from 'react';
 import {timelineElememnts} from '../../../tempData/experiences';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
-import HomeSkillCard from '../HomeSkillCard';
-import Stack from 'react-bootstrap/Stack'
-export default function ExperienceTimeline(){
+import SkillCard from '../SkillCard';
+import Stack from 'react-bootstrap/Stack';
+
+export default function AboutExperienceTimeline(){
   const workIconStyle = {background: "#06D6A0"};
   const schoolIconStyle = {background: "#f9c74f"};
   return (
@@ -32,7 +33,7 @@ export default function ExperienceTimeline(){
           {containsTechStack && 
             <Stack direction="horizontal" gap={2} style={{marginTop: '10px'}}>{
               element.techStack.map(tech => 
-                <HomeSkillCard 
+                <SkillCard 
                   skill={tech} 
                   isPreview={true}
                 />

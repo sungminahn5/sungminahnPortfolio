@@ -1,3 +1,16 @@
+export const TechStack = {
+  REACT: 'REACT',
+  BOOTSTRAP: 'BOOTSTRAP',
+  JS: 'JS',
+  JQUERY: 'JQUERY',
+  NODE: 'NODE',
+  CSHARP: 'CSHARP',
+  MYSQL: 'MYSQL',
+  PHP: 'PHP',
+  RELAY: 'RELAY',
+  GRAPHQL: 'GRAPHQL',
+}
+
 export const timelineElememnts = [
   {
     //Meta
@@ -8,6 +21,7 @@ export const timelineElememnts = [
     description: 'Developing critical features within internal tools (Onboarding, Talent Development Review, etc.)',
     date: "Jun 2022 - Present",
     category: 'WORK',
+    techStack: [TechStack.REACT, TechStack.JS, TechStack.PHP, TechStack.RELAY, TechStack.GRAPHQL],
   },
   {
     //LinQuest
@@ -18,6 +32,7 @@ export const timelineElememnts = [
     description: 'Managing and Building Features to Support Data Accession Lists (DALs) and Contract Data Requirement Lists (CDRLs)',
     date: "Jun 2019 - May 2022",
     category: 'WORK',
+    techStack: [TechStack.JS, TechStack.JQUERY, TechStack.CSHARP],
   },
   {
     //True Nutrition
@@ -28,6 +43,7 @@ export const timelineElememnts = [
     description: 'Building Features to Manage Company Products',
     date: "Jul 2019 - Sep 2019",
     category: 'WORK',
+    techStack: [TechStack.PHP, TechStack.BOOTSTRAP, TechStack.MYSQL, TechStack.BOOTSTRAP],
   },
   {
     //Military
@@ -38,6 +54,7 @@ export const timelineElememnts = [
     description: '',
     date: "Jan 2015 - Jan 2021",
     category: 'WORK',
+    techStack: [],
   },
   {
     //UCLA
@@ -48,5 +65,6 @@ export const timelineElememnts = [
     description: 'University of California, Los Angeles',
     date: "Aug 2017 - Dec 2019",
     category: 'SCHOOL',
+    techStack: [],
   }
 ];

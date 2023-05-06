@@ -2,6 +2,7 @@ import React from 'react';
 
 import HomeSkillCard from './HomeSkillCard';
 import Stack from 'react-bootstrap/esm/Stack';
+import { TechStack } from '../../tempData/experiences';
 
 export default function HomeSkillStack() {
 	return (
@@ -9,16 +10,16 @@ export default function HomeSkillStack() {
 			<div className="tech_stack_home_label">Tech Stack on Portfolio</div>
 			<Stack gap={3} direction='horizontal' content="center">
 				<HomeSkillCard
-					skill="REACT"
+					skill={TechStack.REACT}
 				/>
 					<HomeSkillCard
-					skill="JS"
+					skill={TechStack.JS}
 				/>
 					<HomeSkillCard
-					skill="BOOTSTRAP"
+					skill={TechStack.BOOTSTRAP}
 				/>
 					<HomeSkillCard
-					skill="NODE"
+					skill={TechStack.NODE}
 				/>
 			</Stack>
 		</Stack>

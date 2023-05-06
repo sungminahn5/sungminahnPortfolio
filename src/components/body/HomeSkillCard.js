@@ -1,25 +1,26 @@
 import React from 'react';
+import { TechStack } from '../../tempData/experiences';
 
 import Card from 'react-bootstrap/Card';
 
 function getSkillInfo(skill){
 	switch(skill){
-		case 'BOOTSTRAP':
+		case TechStack.BOOTSTRAP:
 			return {
 				logo: "assets/img/bootstrap_icon.png",
 				label: 'Bootstrap'
 			}
-		case 'JS':
+		case TechStack.JS:
 			return {
 				logo: "assets/img/js_icon.png",
 				label: 'JavaScript'
 			}
-		case 'NODE':
+		case TechStack.NODE:
 			return {
 				logo: "assets/img/node_js_icon.svg",
 				label: 'Node JS'
 			}
-		case 'REACT':
+		case TechStack.REACT:
 			return {
 				logo: "assets/img/logo192.png",
 				label: 'React JS'

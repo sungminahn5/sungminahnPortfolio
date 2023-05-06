@@ -3,7 +3,8 @@ import React from 'react';
 import {timelineElememnts} from '../../../tempData/experiences';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
-
+import HomeSkillCard from '../HomeSkillCard';
+import Stack from 'react-bootstrap/Stack'
 export default function ExperienceTimeline(){
   const workIconStyle = {background: "#06D6A0"};
   const schoolIconStyle = {background: "#f9c74f"};
@@ -11,6 +12,7 @@ export default function ExperienceTimeline(){
   <VerticalTimeline>
     {timelineElememnts.map(element => {
       const isWorkIcon = element.category === "WORK";
+      const containsTechStack = element.techStack.length > 0;
       return (
         <VerticalTimelineElement
           key={element.key}
@@ -27,6 +29,16 @@ export default function ExperienceTimeline(){
           <h5 className="vertical-timeline-title">{element.company}</h5>
           <h7 className="vertical-timeline-subtitle">{element.title}</h7>
           <p id="description">{element.description}</p>
+          {containsTechStack && 
+            <Stack direction="horizontal" gap={2} style={{marginTop: '10px'}}>{
+              element.techStack.map(tech => 
+                <HomeSkillCard 
+                  skill={tech} 
+                  isPreview={true}
+                />
+              )}
+            </Stack>
+          }
         </VerticalTimelineElement>
       );
     }

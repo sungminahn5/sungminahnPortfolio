@@ -10,21 +10,51 @@ function getSkillInfo(skill){
 				logo: "assets/img/bootstrap_icon.png",
 				label: 'Bootstrap'
 			}
+		case TechStack.CSHARP:
+			return {
+				logo: "assets/img/csharp_icon.png",
+				label: 'C#'
+			}
+		case TechStack.GRAPHQL:
+			return {
+				logo: "assets/img/graphQL_icon.png",
+				label: 'GraphQL'
+			}
+		case TechStack.JQUERY:
+			return {
+				logo: "assets/img/jquery_icon.png",
+				label: 'jQuery'
+			}
 		case TechStack.JS:
 			return {
 				logo: "assets/img/js_icon.png",
 				label: 'JavaScript'
+			}
+		case TechStack.MYSQL:
+			return {
+				logo: "assets/img/mySQL_icon.png",
+				label: 'MySQL'
 			}
 		case TechStack.NODE:
 			return {
 				logo: "assets/img/node_js_icon.svg",
 				label: 'Node JS'
 			}
+		case TechStack.PHP:
+				return {
+					logo: "assets/img/php_icon.png",
+					label: 'PHP'
+				}
 		case TechStack.REACT:
 			return {
 				logo: "assets/img/logo192.png",
 				label: 'React JS'
 			}
+		case TechStack.RELAY:
+				return {
+					logo: "assets/img/relay_icon.png",
+					label: 'Relay'
+				}
 		default:
 			return {
 				logo: null,
@@ -33,11 +63,14 @@ function getSkillInfo(skill){
 	}
 }
 
-export default function HomeSkillCard({skill}) {
+export default function HomeSkillCard({
+	skill,
+	isPreview = false
+}) {
 	const {logo, label} = getSkillInfo(skill);
-
+	const widthSize = isPreview ?  '2rem': '3rem';
 	return (
-      <Card title={label} style={{ width: '3rem', boxShadow: '0 0 8px rgb(0,0,0,0.15)', overflow: 'hidden' , border: 'none'}}>
+      <Card title={label} style={{ width: widthSize, boxShadow: '0 0 8px rgb(0,0,0,0.15)', overflow: 'hidden' , border: 'none'}}>
         <Card.Img variant="top" src={logo}/>
     	</Card>
 		);

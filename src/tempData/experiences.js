@@ -1,14 +1,14 @@
 export const TechStack = {
-  REACT: 'REACT',
   BOOTSTRAP: 'BOOTSTRAP',
-  JS: 'JS',
-  JQUERY: 'JQUERY',
-  NODE: 'NODE',
   CSHARP: 'CSHARP',
-  MYSQL: 'MYSQL',
-  PHP: 'PHP',
-  RELAY: 'RELAY',
   GRAPHQL: 'GRAPHQL',
+  JQUERY: 'JQUERY',
+  JS: 'JS',
+  MYSQL: 'MYSQL',
+  NODE: 'NODE',
+  PHP: 'PHP',
+  REACT: 'REACT',
+  RELAY: 'RELAY',
 }
 
 export const timelineElememnts = [
@@ -43,7 +43,7 @@ export const timelineElememnts = [
     description: 'Building Features to Manage Company Products',
     date: "Jul 2019 - Sep 2019",
     category: 'WORK',
-    techStack: [TechStack.PHP, TechStack.BOOTSTRAP, TechStack.MYSQL, TechStack.BOOTSTRAP],
+    techStack: [TechStack.PHP, TechStack.BOOTSTRAP, TechStack.MYSQL],
   },
   {
     //Military
@@ -51,7 +51,7 @@ export const timelineElememnts = [
     title: 'Wheeled Vehicle Mechanic',
     company: 'U.S. Army Reserve',
     location: 'Bell, CA',
-    description: '',
+    description: 'Supervised maintenance and repairs on a variety of tactical, wheeled vehicles',
     date: "Jan 2015 - Jan 2021",
     category: 'WORK',
     techStack: [],
@@ -62,7 +62,7 @@ export const timelineElememnts = [
     title: 'B.S. in Computer Science',
     company: 'UCLA',
     location: 'Los Angeles, CA',
-    description: 'University of California, Los Angeles',
+    description: 'Studied OS, Algorithms, Data Structures, Network, Computer Security, and Machine Learning',
     date: "Aug 2017 - Dec 2019",
     category: 'SCHOOL',
     techStack: [],

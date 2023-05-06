@@ -6,12 +6,12 @@ import HomeComponent from './body/HomeComponent';
 import ProjectsComponent from './body/ProjectsComponent';
 
 export default function BodyComponent(){
-    return (
-        <div class="body-container">
-            <HomeComponent/>
-            <AboutComponent/>
-            <ProjectsComponent/>
-            <ContactComponent/>
-        </div>
-    );
+	return (
+		<div class="body-container">
+			<HomeComponent/>
+			<AboutComponent/>
+			<ProjectsComponent/>
+			<ContactComponent/>
+		</div>
+	);
 }

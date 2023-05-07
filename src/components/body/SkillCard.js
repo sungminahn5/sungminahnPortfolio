@@ -68,9 +68,8 @@ export default function HomeSkillCard({
 	isPreview = false
 }) {
 	const {logo, label} = getSkillInfo(skill);
-	const widthSize = isPreview ?  '2rem': '3rem';
 	return (
-      <Card title={label} style={{ width: widthSize, boxShadow: '0 0 8px rgb(0,0,0,0.15)', overflow: 'hidden' , border: 'none'}}>
+      <Card title={label} style={{ width: '2rem', boxShadow: '0 0 8px rgb(0,0,0,0.15)', overflow: 'hidden' , border: 'none'}}>
         <Card.Img variant="top" src={logo}/>
     	</Card>
 		);

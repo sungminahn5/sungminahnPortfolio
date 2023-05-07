@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 //TODO: Align brand and collapsible button with home
 function NavbarComponent (){
 	return (
-		<Navbar bg="light" expand="lg" style={{padding:'15px 40px'}}>
+		<Navbar bg="light" expand="lg" style={{padding:'15px 40px', position: 'fixed', width: '100%', zIndex: '5'}}>
 			<Navbar.Brand href="/"><b>Sungmin.portfolio</b></Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">

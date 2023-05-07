@@ -11,7 +11,6 @@ export default function BodyComponent(){
 			<HomeContainer/>
 			<AboutContainer/>
 			<ProjectsContainer/>
-			<ContactComponent/>
 		</div>
 	);
 }

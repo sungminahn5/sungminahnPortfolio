@@ -14,12 +14,13 @@
 }
 .home-content {
   width:100%;
-  position: absolute;
   top: 50%;
+  position:absolute;
   transform:translateY(-50%);
   align-items: center;
   display: flex;
-  padding-top:70px;
+  padding: 0px 40px;
+  left:0px;
 }
 .profile{
   align-self: flex-end;
@@ -45,8 +46,9 @@
   transition: all 1s;
   width: 400px;
 }
-.social-media-icons{
+.social-media-icons, .social-media-icons a{
   font-size: 2rem;
+  color: black
 }
 .tech_stack_home_label{
   border-right: 2px solid gray;
@@ -59,7 +61,7 @@
     position:relative;
     flex-direction: column-reverse;
     gap: 3rem;
-    padding-top:15px;
+    padding-top:25px;
     transform: none;
   }
   .profile{

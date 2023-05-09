@@ -5,7 +5,7 @@ import AboutExperienceTimeline from './AboutExperienceTimeline';
 
 export default function AboutContainer(){
   return (
-    <BodyContainer backgroundColor='#f0f0f0' headerLabel='Experiences'>
+    <BodyContainer id="experiences" backgroundColor='#f0f0f0' headerLabel='Experiences'>
       <AboutExperienceTimeline/> 
     </BodyContainer>
   );

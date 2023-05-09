@@ -7,8 +7,8 @@ import HomeSocialMediaStack from './HomeSocialMediaStack';
 
 export default function HomeContainer(){
 	return (
-		<BodyContainer className="home-container">
-			<div className="home-content">
+		<BodyContainer id="home" class="home-container">
+			<div class="home-content">
 				<Stack direction="vertical" className="profile" gap={5}>
 					<Stack gap={3}>
 						<div className="profile-main">

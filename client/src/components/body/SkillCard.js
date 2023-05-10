@@ -1,5 +1,5 @@
 import React from 'react';
-import { TechStack } from '../../tempData/experiences';
+import TechStack from '../../utils/TechStack';
 
 import Card from 'react-bootstrap/Card';
 

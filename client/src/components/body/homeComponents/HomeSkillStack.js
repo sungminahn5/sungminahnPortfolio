@@ -2,7 +2,7 @@ import React from 'react';
 
 import SkillCard from '../SkillCard';
 import Stack from 'react-bootstrap/esm/Stack';
-import { TechStack } from '../../../tempData/experiences';
+import TechStack from '../../../utils/TechStack';
 
 export default function HomeSkillStack() {
 	return (

@@ -19,7 +19,6 @@ export default function AboutExperienceTimeline(){
       }
     }).then( jsonRes => setExperiences(jsonRes.experiences));
   } , []);
-  console.log(experiences);
 
   return (
     <VerticalTimeline>

@@ -9,6 +9,15 @@
 .page-header{
   padding: 20px 0px;
 }
+
+.modal-90w{
+  width: 50vw;
+  max-width: 50vw;
+}
+.button-icon-label-spacing{
+  padding-right: 5px;
+}
+
 .home-container{
   position: relative;
 }

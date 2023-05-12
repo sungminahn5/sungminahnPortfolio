@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import BodyComponent from './components/BodyComponent';
 import NavbarComponent from './components/NavbarComponent';
 
-function App() {
+export default function App() {
   return (
     <div>
       <NavbarComponent/>
@@ -14,5 +14,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

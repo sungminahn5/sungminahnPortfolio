@@ -1,16 +1,16 @@
 import React, {useState, useMemo} from 'react';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import "react-vertical-timeline-component/style.min.css";
+
 import SkillCard from '../SkillCard';
 import Stack from 'react-bootstrap/Stack';
+
+import "react-vertical-timeline-component/style.min.css";
 
 export default function AboutExperienceTimeline(){
   const workIconStyle = {background: "#06D6A0"};
   const schoolIconStyle = {background: "#f9c74f"};
-  const [experiences, setExperiences] = useState([
-    
-  ]);
+  const [experiences, setExperiences] = useState([]);
 
   useMemo(() =>{
     fetch('http://localhost:8080/api/experiences').then( res => {
@@ -39,11 +39,15 @@ export default function AboutExperienceTimeline(){
                 <img alt="school_img" style={{width: '30px', alignContent: 'middle'}} src="/assets/img/school.svg"/> }
           >
             <h5 className="vertical-timeline-title">{element.company}</h5>
-            <h7 className="vertical-timeline-subtitle">{element.title}</h7>
+            <span className="vertical-timeline-subtitle">{element.title}</span>
             <p id="description">{element.description}</p>
             {containsTechStack && 
-              <Stack direction="horizontal" gap={2} style={{marginTop: '10px'}}>{
-                element.techStack.map(tech => 
+              <Stack 
+                direction="horizontal" 
+                gap={2} 
+                style={{marginTop: '10px'}}
+              >
+                {element.techStack.map(tech => 
                   <SkillCard 
                     skill={tech} 
                     isPreview={true}

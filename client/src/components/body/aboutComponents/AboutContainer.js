@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BodyContainer from '../BodyContainer';
 import AboutExperienceTimeline from './AboutExperienceTimeline';
+import BodyContainer from '../BodyContainer';
 
 export default function AboutContainer(){
   return (

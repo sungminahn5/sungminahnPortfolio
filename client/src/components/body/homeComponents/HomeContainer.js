@@ -23,7 +23,9 @@ export default function HomeContainer(){
 					<HomeSocialMediaStack/>
 					<HomeSkillStack/>
 				</Stack>
-				<div className='profile-img-container'><div className="profile-img"/></div>
+				<div className='profile-img-container'>
+					<div className="profile-img"/>
+				</div>
 			</div>
 		</BodyContainer>
 	);
